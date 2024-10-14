@@ -13,7 +13,7 @@ using RimuruDev;
 using UnityEngine;
 using Newtonsoft.Json;
 
-namespace AbyssMoth.Internal.Codebase.Runtime.HalloweenEventLogic.Storage
+namespace AbyssMoth
 {
     [HelpURL("https://github.com/RimuruDev/Unity-ReactivePropertyConverter.git")]
     public sealed class ReactivePropertyConverter : JsonConverter
