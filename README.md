@@ -1,6 +1,15 @@
 # Unity -> Reactive Property Converter
 ReactivePropertyConverter for [ReactiveProperty](https://github.com/RimuruDev/Unity-ReactiveProperty-Helper)
 
+Dependency: 
+```json 
+{
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.1",
+ }
+}
+```
+
 # Example
 
 ```cs
