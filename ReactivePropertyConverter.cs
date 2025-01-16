@@ -8,6 +8,8 @@
 //
 // ********************************************************************
 
+// ReSharper disable CheckNamespace
+
 using System;
 using RimuruDev;
 using UnityEngine;
@@ -15,6 +17,31 @@ using Newtonsoft.Json;
 
 namespace AbyssMoth
 {
+    /// <summary>
+    /// Dependency:
+    /// <code>
+    ///{
+    ///  "dependencies": {
+    ///    "com.unity.nuget.newtonsoft-json": "3.2.1",
+    /// }
+    ///}
+    /// </code>
+    /// <example>
+    /// <code>
+    /// [Serializable]
+    /// public class HalloweenUserProgress
+    /// {
+    ///     [JsonProperty("Currency")] 
+    ///     [JsonConverter(typeof(ReactivePropertyConverter))]
+    ///     public ReactiveProperty-int> Currency = new();
+    ///
+    ///     [JsonProperty("LevelProgress")] 
+    ///     [JsonConverter(typeof(ReactivePropertyConverter))]
+    ///     public ReactiveProperty-List-LevelProgress>> LevelProgress = new();
+    /// }
+    /// </code>
+    /// </example>
+    /// </summary>
     [HelpURL("https://github.com/RimuruDev/Unity-ReactivePropertyConverter.git")]
     public sealed class ReactivePropertyConverter : JsonConverter
     {
